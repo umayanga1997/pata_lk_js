@@ -1,23 +1,34 @@
 <template>
   <div
     class="card popup"
-    :class="isHover? 'hover': ''"
+    :class="isHover ? 'hover' : ''"
     @mouseover="isHover = true"
     @mouseleave="isHover = false"
   >
-    <v-btn v-if="isHover" class="button">View</v-btn>
-    <img :class="isHover? 'hover': ''" :src="Data" alt="" />
+    <v-btn v-if="isHover" @click="dialogAction" class="button">View</v-btn>
+    <img :class="isHover ? 'hover' : ''" :src="Data" alt="" />
+    <DetailCard @dialogAction="dialogAction" :isShow="isDetailCard" />
   </div>
 </template>
 
 <script>
+import DetailCard from "./Movie_Details_Viewer";
+
 export default {
   name: "movie-card",
-      props: ["isCarousel", "Data"],
+  props: ["isCarousel", "Data"],
+  components: {
+    DetailCard,
+  },
   data: () => ({
     isHover: false,
+    isDetailCard: false,
   }),
-  methods: {},
+  methods: {
+    dialogAction() {
+      this.isDetailCard = !this.isDetailCard;
+    },
+  },
 };
 </script>
 
