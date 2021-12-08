@@ -1,0 +1,199 @@
+@import './colors.scss';
+@import './font.scss';
+// Light Colors
+// .light {
+//     .background {
+//         background: $apecWhite_1 !important;
+//         background-color: $apecWhite_1 !important;
+//     }
+//     .appBar {
+//         background: $apecWhite_1 !important;
+//         color: $apecBlack_1 !important;
+//         box-shadow: 0px 0px 10px $apecGrey_3 !important;
+//     }
+//     .tabBar {
+//         color: $apecBlack_1 !important;
+//         & i {
+//             color: $apecBlack_1 !important;
+//         }
+//     }
+//     .appBar-icon {
+//         color: $apecGreen_1 !important;
+//     }
+//     .card {
+//         background: $apecWhite_1 !important;
+//         box-shadow: 1px solid $apecBlueGrey_4 !important;
+//     }
+//     .divider {
+//         background: $apecGrey_2 !important;
+//     }
+//     .icon {
+//         background: $apecGreen_1 !important;
+//     }
+//     .popup {
+//         box-shadow: 0px 0px 10px $apecGrey_3 !important;
+//         background: $apecWhite_1 !important;
+//         color: $apecBlack_1 !important;
+//     }
+//     .popup-2 {
+//         box-shadow: 0px 0px 4px $apecGrey_3 !important;
+//         background: $apecWhite_1 !important;
+//         color: $apecBlack_1 !important;
+//     }
+//     .button {
+//         background: $apecGreen_1 !important;
+//         color: $apecWhite_1 !important;
+//         &:hover {
+//             // background: transparent !important;
+//             cursor: pointer;
+//         }
+//     }
+//     .button-border {
+//         @extend .background;
+//         border: 1px solid $apecGreen_1;
+//         border-radius: 8px;
+//         box-shadow: 0px 1px 4px 1px rgb(185, 185, 185);
+//         color: $apecGreen_1 !important;
+//         padding: 0px 30px;
+//     }
+//     .unselected {
+//         background: $apecGrey_1 !important;
+//     }
+//     .disable {
+//         background: $apecGrey_3 !important;
+//     }
+//     .text-body {
+//         color: $apecGrey_3 !important;
+//         text-align: center;
+//     }
+//     .text-subtitle {
+//         color: $apecGrey_2 !important;
+//         text-align: center;
+//     }
+//     .text-headline {
+//         color: $apecBlack_1 !important;
+//         text-align: center;
+//     }
+//     .text-caption-new {
+//         color: $apecBlue !important;
+//         text-align: center;
+//     }
+//     .floating-btn {
+//         background: $apecGreen_1 !important;
+//     }
+//     .link-color {
+//         color: $apecLightBlue_2 !important;
+//     }
+//     .dialog-box {
+//         background: $apecWhite_1 !important;
+//         .content-text {
+//             color: $apecGrey_1 !important;
+//         }
+//         .title-text {
+//             color: $apecWhite_1 !important;
+//         }
+//     }
+// }
+// Dark Colors
+.dark {
+    .background {
+        background: $apecBlueGrey_2 !important;
+    }
+    .appBar {
+        background: $apecGrey !important;
+        color: $apecWhite_1 !important;
+    }
+    .appBar-icon {
+        color: $apecGreenTeal_1 !important;
+    }
+    .card {
+        background: $apecBlueGrey_3 !important;
+        box-shadow: 1px solid $apecBlueGrey_4 !important;
+    }
+    .divider {
+        background: $apecSilver_1 !important;
+    }
+    .icon {
+        background: $apecGreenTeal_1 !important;
+    }
+    .popup {
+        // box-shadow: 5 !important;
+        background: $apecBlueGrey_4 !important;
+        color: $apecWhite_1 !important;
+    }
+    .popup-2 {
+        // box-shadow: 5 !important;
+        background: $apecBlueGrey_4 !important;
+        color: $apecWhite_1 !important;
+    }
+    .button {
+        background: $apecGreenTeal_1 !important;
+        color: $apecBlack_1 !important;
+        &:hover {
+            // background: transparent !important;
+            cursor: pointer;
+        }
+    }
+    .button-border {
+        // @extend .background;
+        background: $apecBlueGrey_4 !important;
+        border: 1px solid $apecGreenTeal_1;
+        border-radius: 8px;
+        // box-shadow: 0px 1px 4px 1px rgb(185, 185, 185);
+        color: $apecGreenTeal_1 !important;
+        padding: 0px 30px;
+    }
+    .unselected {
+        background: $apecSilver_1 !important;
+    }
+    .disable {
+        background: $apecGrey_3 !important;
+    }
+    .text-body {
+        color: $apecGrey_2 !important;
+        text-align: center;
+    }
+    .text-subtitle {
+        color: $apecSilver_1 !important;
+        text-align: center;
+    }
+    .text-headline {
+        color: $apecWhite_1 !important;
+        text-align: center;
+    }
+    .text-caption-new {
+        color: $apecTeal !important;
+        text-align: center;
+    }
+    .floating-btn {
+        background: $apecTeal_1 !important;
+    }
+    .link-color {
+        color: $apecLightBlue_2 !important;
+    }
+    .dialog-box {
+        background: $apecBlueGrey_4 !important;
+        .content-text {
+            color: $apecSilver_1 !important;
+        }
+        .title-text {
+            color: $apecWhite_1 !important;
+        }
+    }
+}
+
+.fsmall {
+    font-size: $fsmall !important;
+}
+
+.fmedium {
+    font-size: $fmedium !important;
+}
+
+.flarge {
+    font-size: $flarge !important;
+}
+
+.fbig {
+    font-size: $fbig !important;
+}

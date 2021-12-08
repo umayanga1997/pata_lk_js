@@ -1,0 +1,118 @@
+.dark .background {
+  background: #151a1e !important;
+}
+
+.dark .appBar {
+  background: #131313 !important;
+  color: #ffffff !important;
+}
+
+.dark .appBar-icon {
+  color: #01FF80 !important;
+}
+
+.dark .card {
+  background: #1f262d !important;
+  -webkit-box-shadow: 1px solid #2a343c !important;
+          box-shadow: 1px solid #2a343c !important;
+}
+
+.dark .divider {
+  background: #C0C0C0 !important;
+}
+
+.dark .icon {
+  background: #01FF80 !important;
+}
+
+.dark .popup {
+  background: #2a343c !important;
+  color: #ffffff !important;
+}
+
+.dark .popup-2 {
+  background: #2a343c !important;
+  color: #ffffff !important;
+}
+
+.dark .button {
+  background: #01FF80 !important;
+  color: #000000 !important;
+}
+
+.dark .button:hover {
+  cursor: pointer;
+}
+
+.dark .button-border {
+  background: #2a343c !important;
+  border: 1px solid #01FF80;
+  border-radius: 8px;
+  color: #01FF80 !important;
+  padding: 0px 30px;
+}
+
+.dark .unselected {
+  background: #C0C0C0 !important;
+}
+
+.dark .disable {
+  background: #A9A9A9 !important;
+}
+
+.dark .text-body {
+  color: #808080 !important;
+  text-align: center;
+}
+
+.dark .text-subtitle {
+  color: #C0C0C0 !important;
+  text-align: center;
+}
+
+.dark .text-headline {
+  color: #ffffff !important;
+  text-align: center;
+}
+
+.dark .text-caption-new {
+  color: #17F7FF !important;
+  text-align: center;
+}
+
+.dark .floating-btn {
+  background: #00adb5 !important;
+}
+
+.dark .link-color {
+  color: #4967ff !important;
+}
+
+.dark .dialog-box {
+  background: #2a343c !important;
+}
+
+.dark .dialog-box .content-text {
+  color: #C0C0C0 !important;
+}
+
+.dark .dialog-box .title-text {
+  color: #ffffff !important;
+}
+
+.fsmall {
+  font-size: 14px !important;
+}
+
+.fmedium {
+  font-size: 15.5px !important;
+}
+
+.flarge {
+  font-size: 16.5px !important;
+}
+
+.fbig {
+  font-size: 18px !important;
+}
+/*# sourceMappingURL=theme_styles.css.map */
