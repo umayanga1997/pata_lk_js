@@ -8,7 +8,7 @@
     >
       <v-card class="dialog-box">
         <v-toolbar dark>
-          <v-toolbar-title>Move Name</v-toolbar-title>
+          <v-toolbar-title>Movie Name</v-toolbar-title>
           <v-spacer></v-spacer>
           <v-btn icon class="appBar-icon" @click="dialogAction">
             <v-icon>mdi-close</v-icon>
