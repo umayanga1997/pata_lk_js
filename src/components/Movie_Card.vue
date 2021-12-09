@@ -16,7 +16,7 @@ import DetailCard from "./Movie_Details_Viewer";
 
 export default {
   name: "movie-card",
-  props: ["isCarousel", "Data"],
+  props: ["Data"],
   components: {
     DetailCard,
   },
