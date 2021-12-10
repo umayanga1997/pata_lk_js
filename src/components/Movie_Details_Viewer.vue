@@ -17,6 +17,22 @@
             <v-btn dark text @click=""> Close </v-btn>
           </v-toolbar-items> -->
         </v-toolbar>
+        <v-container fluid>
+          <p class="text-headline">
+            Ronny (Tiger Shroff) a spoilt army brat, is sent to a martial arts
+            academy by his dying father to discipline him. Ronny though a very
+            capable learner, continues his mischief until he finally understands
+            the importance of the art taught by the Guru. Sia (Shraddha Kapoor),
+            an upcoming actress of the south, is Ronny's love interest.
+          </p>
+          <p class="text-headline">
+            Ronny (Tiger Shroff) a spoilt army brat, is sent to a martial arts
+            academy by his dying father to discipline him. Ronny though a very
+            capable learner, continues his mischief until he finally understands
+            the importance of the art taught by the Guru. Sia (Shraddha Kapoor),
+            an upcoming actress of the south, is Ronny's love interest.
+          </p>
+        </v-container>
       </v-card>
     </v-dialog>
   </v-row>
@@ -25,7 +41,7 @@
 <script>
 export default {
   name: "movieDetailsViewer",
-  props: ["isShow"],
+  props: ["isShow", "Details"],
   data() {
     return {};
   },
@@ -37,4 +53,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.text-headline {
+  text-align: start !important;
+}
 </style>
