@@ -20,10 +20,13 @@
 </template>
 
 <script>
+import { dataBase } from "../firebaseConfig";
 import SearchContainer from "@/components/Search_Container.vue";
 import Carousel from "@/components/Carousel.vue";
 import FilterContainer from "@/components/Filter.vue";
 import MovieCard from "@/components/Movie_Card.vue";
+
+var movieDB = dataBase.ref("movies");
 
 export default {
   name: "Home",
@@ -60,7 +63,30 @@ export default {
     FilterContainer,
     MovieCard,
   },
-  methods: {},
+  created() {
+    this.fetchMovies();
+  },
+  methods: {
+    async fetchMovies() {
+      try {
+        console.log("hi");
+        movieDB
+          .get()
+          .then((snapshot) => {
+            if (snapshot.exists()) {
+              console.log(snapshot.val());
+            } else {
+              console.log("No data available");
+            }
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      } catch (error) {
+        console.log(error);
+      }
+    },
+  },
 };
 </script>
 

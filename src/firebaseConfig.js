@@ -1,4 +1,4 @@
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 
 const firebaseConfig = {
     apiKey: "AIzaSyC8IboVHdvJklcQr9RxeLTBlV-WZ0-8Sv0",
@@ -16,7 +16,7 @@ firebaseApp.firestore().settings({
 });
 firebaseApp.firestore().enablePersistence();
 const fireStore = firebaseApp.firestore();
-const database = firebaseApp.database();
+const dataBase = firebaseApp.database();
 const storage = firebaseApp.storage();
 const auth = firebase.auth();
 // firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
@@ -26,7 +26,7 @@ export {
     fireStore,
     storage,
     firebase,
-    database,
+    dataBase,
     auth,
     googleAuthProvider,
 };
