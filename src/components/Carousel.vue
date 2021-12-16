@@ -28,7 +28,6 @@
 </template>
 
 <script>
-import { Carousel3d, Slide } from "vue-carousel-3d";
 import DetailCard from "./Movie_Details_Viewer";
 
 export default {
@@ -39,8 +38,6 @@ export default {
     isDetailCard: false,
   }),
   components: {
-    Carousel3d,
-    Slide,
     DetailCard,
   },
   methods: {
